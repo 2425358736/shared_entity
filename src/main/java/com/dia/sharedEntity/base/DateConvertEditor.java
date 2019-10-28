@@ -7,8 +7,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
- * 开发公司：青岛海豚数据技术有限公司
- * 版权：青岛海豚数据技术有限公司
+ * 开发公司：xx公司
+ * 版权：xx公司
  * <p>
  * DateConvertEditor
  *

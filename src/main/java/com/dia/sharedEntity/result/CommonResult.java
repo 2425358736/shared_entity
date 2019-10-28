@@ -7,8 +7,8 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
 /**
- * 开发公司：青岛海豚数据技术有限公司
- * 版权：青岛海豚数据技术有限公司
+ * 开发公司：xx公司
+ * 版权：xx公司
  * <p>
  * CommonResult
  *
@@ -74,11 +74,27 @@ public class CommonResult<T> implements Serializable {
     /**
      *成功响应
      * @param data
+     * @param <T>
+     * @return
+     */
+    public static <T> CommonResult<T> successReturnDate(T data) {
+        CommonResult<T> result = new CommonResult<T>();
+        result.setData(data);
+        result.setMsg("成功");
+        result.setStatus(200);
+        result.setSubMsg("");
+        result.setVersion("1.0");
+        return result;
+    }
+
+    /**
+     *成功响应
+     * @param data
      * @param msg
      * @param <T>
      * @return
      */
-    public static <T> CommonResult<T> successReturn(T data, String msg) {
+    public static <T> CommonResult<T> successReturnDate(T data, String msg) {
         CommonResult<T> result = new CommonResult<T>();
         result.setData(data);
         result.setMsg(msg);
